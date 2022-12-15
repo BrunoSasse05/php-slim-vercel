@@ -36,7 +36,7 @@ $app->get('/testbot/{message}', function (Request $request, Response $response, 
     
     ControllerApiTelegram::sendMessage("Informe seu CPF para iniciar a conversa! Senac - Testes");
     
-    $response->getBody()->write("Enviando mensagem para o chatbot!");
+    $response->getBody()->write("Chatbot Respondendo!");
 
     return $response;
 });
